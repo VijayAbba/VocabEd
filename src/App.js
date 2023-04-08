@@ -17,48 +17,60 @@ export default function App() {
     {
       web: `https://www.google.com/search?igu=1&ei=&q=${cloze} meaning`,
       id: 1,
+      title: "google",
     },
     {
       web: `https://dictionary.cambridge.org/dictionary/english/${cloze}`,
       id: 2,
+      title: "cambridge",
     },
     {
       web: `https://www.dictionary.com/browse/${cloze}`,
       id: 3,
+      title: "dictionary",
     },
     {
       web: `https://www.vocabulary.com/dictionary/${cloze}`,
       id: 4,
+      title: "vocabulary",
     },
     {
       web: `https://www.urbandictionary.com/define.php?term=${cloze}`,
       id: 5,
+      title: "urbandictionary",
     },
     {
       web: `https://en.wiktionary.org/wiki/${cloze}`,
       id: 6,
+      title: "wiktionary",
     },
     {
       web: `https://www.thefreedictionary.com/${cloze}`,
       id: 7,
+      title: "thefreedictionary",
     },
     {
       web: `https://www.wordhippo.com/what-is/another-word-for/${cloze}.html`,
       id: 8,
+      title: "wordhippo",
     },
     {
       web: `https://visuwords.com/${cloze}`,
       id: 9,
+      title: "visuwords",
     },
     {
       web: `https://www.pexels.com/search/${cloze}`,
       id: 10,
+      title: "pexels",
     },
   ];
 
   return (
     <div className=" md:block">
-      <h1 className="mt-2 text-center text-2xl">What does that even mean?</h1>
+      <h1 className="mt-2 text-center text-2xl">
+        Want to know what a word means? Type it in and hit search!
+      </h1>
       <div className="flex justify-center items-center">
         <div className="  mb-4">
           <input
@@ -80,7 +92,8 @@ export default function App() {
           <iframe
             key={eachWeb.id}
             sandbox="allow-scripts"
-            className="h-[580px] w-[95vw] md:w-[340px] md:m-3 drop-shadow-2xl text-xs rounded-md border-8 md:border-4 border-amber-300"
+            title={eachWeb.title}
+            className="h-[580px] w-[95vw]  md:w-[340px] mt-2 md:m-3 drop-shadow-2xl text-xs rounded-md border-8 md:border-4 border-amber-300"
             src={eachWeb.web}
           ></iframe>
         ))}
