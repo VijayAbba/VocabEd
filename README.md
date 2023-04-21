@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ab489133-d24a-4d58-83df-6201cf5a21bc/deploy-status)](https://app.netlify.com/sites/zingy-shortbread-c50219/deploys)
+
+
 https://zingy-shortbread-c50219.netlify.app/
 
 
