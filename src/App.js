@@ -71,7 +71,7 @@ export default function App() {
       <h1 className="mt-2 text-center text-2xl">
         Learn Vocabulary
       </h1>
-    <a src="https://github.com/VijayAbba">GitHub </a>
+    <a href="https://github.com/VijayAbba">GitHub </a>
       <div className="flex justify-center items-center">
         <div className="  mb-4">
           <input
