@@ -68,7 +68,9 @@ export default function App() {
 
   return (
     <div className=" md:block">
-      <h1 className="mt-2 text-center text-2xl">What does that even mean?</h1>
+      <h1 className="mt-2 text-center text-2xl">
+        Want to know what a word means? Type it in and hit search!
+      </h1>
       <div className="flex justify-center items-center">
         <div className="  mb-4">
           <input
